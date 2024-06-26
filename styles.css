@@ -1,0 +1,303 @@
+:root {
+    --blue: #3D52A0;
+    --lightblue: #7091e6;
+    --darkgray: #8697C4;
+    --lightgray: #ADBBDA;
+    --pinkwhite: #EDE8F5;
+  }
+
+* {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--pinkwhite);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    
+    background-color:#7091e6;
+    min-width: 160px;
+   
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.nav{
+    background-color: black;
+    font-size: 20px;   
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title{
+    color: white;
+}
+
+.nav-categories{
+    background-color: var(--lightblue);
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.nav-categories ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+}
+
+.nav-categories li  {
+    float: left;
+    border-right: 1px solid #bbb;
+    padding-left: 10px;
+    
+  }
+
+
+.nav-categories li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px 10px 0px;
+    text-decoration: none;
+  }
+
+.nav-categories  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .nav-info{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white;
+    
+  }
+
+
+
+
+  .nav-access a:link { 
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    
+  } 
+
+
+  .sub{
+    background-color: white !important;
+    color: black ;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70px;
+    margin: 5px;
+  }
+
+
+  section{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .news{
+    margin-top: 5px;
+    display: flex;
+    border-style: solid;
+    border-color: #dbdbdbd3;
+    border-width: 1px;
+    background-color: rgba(255, 255, 255, 0.589);
+    justify-content: center;
+      
+  }
+
+  .news-side{
+    
+    border: #555;
+    padding: 100px;
+    border-bottom: 1px dashed transparent;
+    border-image: linear-gradient(0.25turn, rgb(255, 255, 255), rgb(140, 152, 168), rgba(56,2,155,0));
+    border-image-slice: 1;
+    
+    
+    
+    
+    
+  }
+
+  .side-news{
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    color: black ;
+    border-style: solid;
+    border-color: #dbdbdbd3;
+    border-width: 1px;
+    margin-left: 10px;
+    width: 400px;
+
+  }
+
+
+  .news-main{
+    
+    border: #555;
+    padding: 50px;
+    border-bottom: 1px dashed transparent;
+    border-image: linear-gradient(0.25turn, rgb(255, 255, 255), rgb(140, 152, 168), rgba(56,2,155,0));
+    border-image-slice: 1;
+    display: flex;
+    
+    
+  }
+
+  .news-img{
+    height: 50%;
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  .news-img img{
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .main-news{
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    color: black ;
+    border-style: solid;
+    border-color: #dbdbdbd3;
+    border-width: 0.5px;
+    width: 1100px;
+    
+    
+
+  }
+
+
+  .market-rates{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .market-rates ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+
+
+  .market-rates li  {
+    float: left;
+    text-decoration: none;
+    background-color: black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+  }
+
+
+  .market-rates li a {
+    display: block;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: transparent !important;
+    border-style: solid !important;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px ;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown-click {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-click-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-click-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-click-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+.news-bycondition{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+.news-row{
+    display: flex;
+    justify-content: space-between;
+    border-right: 1px dashed transparent;
+    border-image: linear-gradient(0.25turn, rgb(255, 255, 255), rgb(140, 152, 168), rgba(56,2,155,0));
+    border-image-slice: 1;
+}
